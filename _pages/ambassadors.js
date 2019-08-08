@@ -8,6 +8,7 @@ module.exports = {
     itemNames: "Ambassadors",
     items: [{
         name: "Sean O'Mahoney",
+        title: "Creator",
         tags: ["Organiser", "Networker", "Speaker", "Volunteer"],
         addedDate: "08-08-2019",
         img: "https://pbs.twimg.com/profile_images/1097261231692484608/AqnuRgZZ_400x400.jpg",
