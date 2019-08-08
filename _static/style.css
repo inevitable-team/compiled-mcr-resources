@@ -110,8 +110,6 @@ a {
     }
     .item {
         margin: 5px;
-        min-width: none;
-        width: 100%;
         padding: 5px;
     }
     .item .itemImgContainer {
@@ -123,7 +121,7 @@ a {
     }
     .item img {
         width: 80px;
-        margin: 8px;
         margin-bottom: -5px;
+        margin-left: -5px;
     }
 }
