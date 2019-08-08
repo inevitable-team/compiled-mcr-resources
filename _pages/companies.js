@@ -8,9 +8,10 @@ module.exports = {
     itemNames: "Companies",
     items: [{
         name: "Inevitable",
+        tags: ["Events"],
         addedDate: "08-08-2019",
         img: "https://pbs.twimg.com/profile_images/1141685522181627904/7uGRUMcI_400x400.png",
         url: "https://twitter.com/WeAreInevitable",
-        desc: "We are a collaborative AI technology startup based The Landing, Media City, pedging to contribue to the community by hosting relevant events."
+        desc: "We are a collaborative AI technology startup based The Landing, Media City, pedging to contribute to the community by running and speaking at relevant events."
     }]
 }

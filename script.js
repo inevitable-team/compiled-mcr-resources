@@ -55,6 +55,7 @@ pages.forEach(page => {
             return itemModule(
                 item.img,
                 item.name,
+                item.tags ? item.tags : [],
                 item.title,
                 item.url,
                 item.desc

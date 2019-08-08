@@ -8,6 +8,7 @@ module.exports = {
     itemNames: "Communities",
     items: [{
         name: "DrinkaboutMCR",
+        tags: ["Networking"],
         addedDate: "08-08-2019",
         img: "https://pbs.twimg.com/profile_images/472371600155635713/yXQn7mkH_400x400.png",
         url: "https://twitter.com/DrinkaboutMCR",

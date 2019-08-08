@@ -12,8 +12,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-header {
+header, .itemTags p {
     background: linear-gradient(to right top, #219679, #009491, #0090a5, #008ab1, #4682b4);
+}
+
+header {
     padding: 50px 5vw 80px 5vw;
     color: white;
 }
@@ -107,6 +110,16 @@ a {
 .item .itemContent * {
     margin: 8px;
     overflow-wrap: break-word;
+}
+
+.itemTags p {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 2px -1px !important;
+    background-color: aqua;
+    padding: 2px 8px;
+    border-radius: 15px;
+    color: white;
 }
 
 @media only screen and (max-width:550px) {
