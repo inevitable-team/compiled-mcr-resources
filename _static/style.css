@@ -122,6 +122,10 @@ a {
     color: white;
 }
 
+.role {
+    background: linear-gradient(to right top,orange,red) !important;
+}
+
 @media only screen and (max-width:550px) {
     .homeItem {
         width: calc(100% - 20px);
