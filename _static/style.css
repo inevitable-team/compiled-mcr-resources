@@ -100,8 +100,13 @@ a {
     display: contents;
 }
 
+.item .itemContent {
+    width: 100% !important;
+}
+
 .item .itemContent * {
     margin: 8px;
+    overflow-wrap: break-word;
 }
 
 @media only screen and (max-width:550px) {
@@ -110,7 +115,7 @@ a {
     }
     .item {
         margin: 5px;
-        padding: 5px;
+        padding: 10px;
     }
     .item .itemContent * {
         margin: 2px;
