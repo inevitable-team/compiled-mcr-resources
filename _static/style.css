@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    margin: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+header {
+    background: linear-gradient(to right top, #219679, #009491, #0090a5, #008ab1, #4682b4);
+    padding: 50px 5vw 80px 5vw;
+    color: white;
+}
+
+header > img {
+    width: 150px;
+}
+
+.socialLinks img {
+    border: none;
+    display: inline-block;
+    height: 30px;
+    margin: 2px 5px;
+}
+
+img {
+    border: 2px white solid;
+    border-radius: 50%;
+}
+
+#items {
+    background-color: white !important;
+    width: calc(80vw - 40px);
+    margin: 0 auto;
+    transform: translateY(-70px);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.homeItem:hover {
+    transform: scale(1.05);
+}
+
+.homeItem {
+    margin: 5px;
+    display: inline-block;
+    width: calc(50% - 30px);
+    /* height: 140px; */
+    padding: 10px 5px;
+    max-width: 300px;
+    background: linear-gradient(to top right, #fbd786, #f7797d); 
+    border-radius: 15px;
+    vertical-align: top;
+    overflow: hidden;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.homeItem h3, .homeItem p {
+    margin: 5px 10px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.item {
+    margin: 5px;
+    display: inline-block;
+    width: calc(90% - 10px);
+    max-width: 250px;
+    vertical-align: top;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    padding: 5%;
+}
+
+.item img {
+    width: 90%;
+    max-width: 150px;
+    margin: 5%;
+}
+
+.item .itemImgContainer {
+    width: inherit;
+    border-bottom: solid #4d4d4d 1px;
+    margin: 0 auto;
+}
+
+.item .itemShort {
+    color: #4d4d4d;
+}
+
+a {
+    color: inherit;
+    display: contents;
+}
+
+.item .itemContent * {
+    margin: 10px;
+}
+
+@media only screen and (max-width:550px) {
+    .homeItem {
+        width: calc(100% - 20px);
+    }
+    .item {
+        margin: 5px;
+        min-width: none;
+        width: 100%;
+        padding: 5px;
+    }
+    .item .itemImgContainer {
+        border-bottom: none !important;
+    }
+    .item .itemContent, .item .itemImgContainer, .item img {
+        display: inline-block;
+        text-align: left
+    }
+    .item img {
+        width: 80px;
+        margin: 8px;
+        margin-bottom: -5px;
+    }
+}
