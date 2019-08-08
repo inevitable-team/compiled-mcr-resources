@@ -7,5 +7,6 @@ module.exports = (title, metaDesc, metaTags) => `
     <meta name="keywords" content="${metaTags.join(",")}">
     <title>${title}</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 `
