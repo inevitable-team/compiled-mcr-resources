@@ -123,7 +123,23 @@ a {
 }
 
 .role {
-    background: linear-gradient(to right top,orange,red) !important;
+    background: linear-gradient(to top right,#d6a128,#d12f35) !important;
+}
+
+.skill {
+    background: linear-gradient(to right top,#21b2c9,#3524ef) !important;
+}
+
+.websiteIcons {
+    margin: -10px !important;
+}
+
+.websiteIcons img {
+    filter: invert(80%);
+    width: 25px !important;
+    border: none;
+    display: inline-block !important;
+    margin: 6px 2px !important;
 }
 
 @media only screen and (max-width:550px) {
@@ -148,5 +164,8 @@ a {
         width: 80px;
         margin-bottom: -5px;
         margin-left: -5px;
+    }
+    .websiteIcons {
+        margin: 0px !important;
     }
 }

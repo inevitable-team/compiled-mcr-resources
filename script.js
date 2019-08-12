@@ -56,8 +56,9 @@ pages.forEach(page => {
                 item.img,
                 item.name,
                 item.tags ? item.tags : [],
+                item.skills ? item.skills : [],
                 item.title,
-                item.url,
+                createWebsiteLinks(item.urls || []),
                 item.desc
             )
         }).join("\n"),
@@ -74,6 +75,20 @@ fs.writeFileSync(`./_site/sitemap.xml`, beautify(rtnSiteMap(sitemap), { format: 
 minifyFile('./_site/style.css');
 
 // Extra Functions
+
+function createWebsiteLinks(urls) {
+    return "<div class='websiteIcons'>" + urls.map(url => `<a href='${url}' target='_blank' rel='noopener noreferrer'><img src='${getIcon(url)}' alt='${url}'></a>`).join("\n") + "</div>";
+}
+
+function getIcon(url) {
+    if (url.includes("twitter.com")) return "assets/icons/twitter-min.png";
+    if (url.includes("facebook.com")) return "assets/icons/facebook-min.png";
+    if (url.includes("github.com")) return "assets/icons/github-min.png";
+    if (url.includes("meetup.com")) return "assets/icons/meetup-min.png";
+    if (url.includes("eventbrite.com")) return "assets/icons/eventbrite-min.png";
+    if (url.includes("mailto:")) return "assets/icons/outlook-min.png";
+    return "assets/icons/website-min.png";
+}
 
 function minifyFile(fileLocation) {
     minify(fileLocation).then(minified => fs.writeFileSync(fileLocation, minified, () => {}));
