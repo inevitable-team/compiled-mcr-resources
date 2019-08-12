@@ -1,7 +1,7 @@
 module.exports = {
     name: "Ambassadors",
     order: 2,
-    desc: "Meet the individuals that signed up to help share Compiled MCR and give back to the community.",
+    desc: "Meet the individuals that signed up to help share Compiled MCR and give back to the community, that being via organising, speaking or volunteering events, helping those attending find the correct people, or giving back in another form.",
     slug: "ambassadors",
     background: "linear-gradient(to top right, #fbd786, #f7797d)",
     img: "",
