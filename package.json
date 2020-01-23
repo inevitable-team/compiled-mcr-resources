@@ -11,7 +11,7 @@
   "dependencies": {
     "beautify": "0.0.8",
     "fs-extra": "^8.1.0",
-    "minify": "^5.0.0",
+    "minify": "^5.1.0",
     "shelljs": "^0.8.3"
   }
 }
